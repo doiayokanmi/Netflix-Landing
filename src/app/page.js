@@ -4,6 +4,7 @@ import Enjoy from './components/Enjoy'
 import tvImage from '../../public/Image/tv.png'
 import downloadImg from '../../public/Image/mobile-0819.jpg'
 import kidsImg from '../../public/Image/kids.png'
+import Faqs from './components/Faqs'
 
 
 export default function Home() {
@@ -49,6 +50,7 @@ export default function Home() {
         ))
       }
       
+      <Faqs />
     </>
   )
 }
