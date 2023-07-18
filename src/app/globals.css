@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+body {
+  background-color: #000;
+}
+
+main {
+  background: url(/Image/NG-en-20230710-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+  background-size: 120%;
+  background-position: bottom;
+  position: relative;
+  z-index: -2;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .3), rgba(0, 0, 0, 1));
+  pointer-events: none;
+  z-index: -1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8em;
+}
+
+.text {
+  height: 100vh;
+  border-bottom: 8px solid #232323;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  gap:  1.5em;
+  padding: 1em 8em;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 900;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+.link {
+  background-color: #E50914;
+  color: antiquewhite;
+  padding: .6em 1.4em;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: smaller;
+}
+
+.enjoy {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8em;
+  border-bottom: 8px solid #232323;
+}
+
+.enjoy div {
+  flex-basis: 50%;
+}
