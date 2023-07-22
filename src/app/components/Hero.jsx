@@ -6,8 +6,10 @@ const Hero = () => {
   return (
     <>
         <main>
+            <div id="container">
             <Header />
             <Text />
+            </div>
         </main>
     </>
   )

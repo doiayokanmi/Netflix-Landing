@@ -14,20 +14,12 @@ main {
   background: url(/Image/NG-en-20230710-popsignuptwoweeks-perspective_alpha_website_small.jpg);
   background-size: 120%;
   background-position: bottom;
-  position: relative;
-  z-index: -2;
 }
 
-main::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+#container {
   width: 100%;
   height: 100%;
   background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .3), rgba(0, 0, 0, 1));
-  pointer-events: none;
-  z-index: -1;
 }
 
 nav {
@@ -35,6 +27,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 8em;
+  z-index: 1;
 }
 
 .text {
@@ -79,4 +72,22 @@ p {
 
 .enjoy div {
   flex-basis: 50%;
+}
+
+.faqs {
+  padding: 4em 8em;
+  border-bottom: 8px solid #232323;
+}
+
+h6 {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#signinCon {
+  height: 100vh;
 }
